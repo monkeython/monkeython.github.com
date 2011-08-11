@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Cabin+Sketch:700);
+@import url(http://fonts.googleapis.com/css?family=Gloria+Hallelujah);
 /*
  * background-color: #1C4E63;
  * background-color: #133F52;
@@ -5,10 +7,11 @@
 */
 body {
     /* background-color: #133F52; */
-    color: #000000;
+    color: #FFFFFF;
     padding: 0px;
     margin: 0px;
-    background-color: #11303D;
+    background-color: #133F52;
+    font-family: "arial", sans-serif;
 }
 body > div {
     background-color: #FFFFFF;
@@ -19,17 +22,17 @@ span.monke {
 span.ython {
     color: #FFED60;
 }
-h1, h2 {
+h1, h2, h3, h4, h5, h6, div.copyright {
     font-family: 'Cabin Sketch', arial, serif;
 }
 header {
     padding-bottom: 32px;
     padding-top: 32px;
     margin: 0px;
-    background-color: #1C4E63;
+    background-color: #133F52;
     color: #FFFFFF;
 }
-header > h1 {
+header h1 {
     width: 600px;
     margin: 0px auto;
     display: block;
@@ -37,12 +40,16 @@ header > h1 {
     font-size: 108px;
     margin-bottom: 0;
 }
-header > h2 {
+header h2 {
     display: block;
     width: 600px;
     margin: 0px auto;
     font-size: medium;
     text-align: right;
+}
+a.more {
+    font-family: 'Gloria Hallelujah', cursive;
+    float: right;
 }
 a.forkme {
     background-image: url('/fork-me.png');
@@ -55,14 +62,13 @@ a.forkme {
     height: 149px;
     color: transparent;
 }
-a.githubbadge {
+.githubbadge {
     border: 0 none;
     height: 150px;
     width: 200px;
     overflow: hidden;
-    position: absolute;
-    margin-left: 15px;
-    margin-top: 90px;
+    margin-left: 20px;
+    margin-top: 20px;
     float: left;
     color: transparent;
 }
@@ -73,26 +79,29 @@ footer > div, header {
 footer > div {
     margin: 0px;
     padding: 15px 15px 10px 15px;
-    background-color: #133F52;
+    background-color: #1C4E63;
 }
 footer > nav {
     margin: 0px;
+    padding-top: 10px;
     z-index: 200;
-    border-top: 5px solid #133F52;
+    border-top: 5px solid #1C4E63;
+    font-weight: lighter;
+    font-size: larger;
+    font-family: 'Gloria Hallelujah', cursive;
 }
 footer {
-    font-family: 'Cabin Sketch', arial, serif;
     text-align: center;
     font-size: smaller;
     margin: auto 0px auto auto;
-    background-color: #11303D;
+    /* background-color: #11303D; */
+    background-color: #133F52;
     color: #FFFFFF;
 }
-footer > nav > ul > li {
+footer > nav > ul > li, footer > nav > ul {
     display: inline-block;
     clear: none;
     margin: 0px 5px;
-    font-size: larger;
 }
 footer > nav > ul > li:before,
 footer > nav > ul > li:after {
@@ -107,9 +116,9 @@ footer dt, footer li {
 }
 footer dl {
     margin: 0px 10px 0px 0px;
-    padding: 20px;
+    padding: 0px 20px 0px 0px;
     width: 148px;
-    border-right: thin dashed #1C4E63;
+    border-right: medium dashed #1C4E63;
     list-style-position: outside;
     display: inline-block;
     clear: none;
@@ -133,12 +142,34 @@ section {
     padding: 19px;
     margin: 0px auto;
 }
+section h1 {
+    font-size: xx-large;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+code {
+    font-size: larger;
+}
 :link, :visited {
     color: #3882BE;
     text-decoration: none;
 }
 :hover {
     color: #3882BE;
-    text-decoration: underline;
+    text-decoration: none;
+    border-bottom-width: thin;
+    border-bottom-style: solid;
+    border-bottom-color: #3882BE;
 }
 
+footer :link, footer :visited {
+    color: #FFED60;
+    text-decoration: none;
+}
+footer :hover {
+    color: #FFED60;
+    text-decoration: none;
+    border-bottom-width: thin;
+    border-bottom-style: solid;
+    border-bottom-color: #FFED60;
+}
