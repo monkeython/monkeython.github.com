@@ -47,7 +47,7 @@ header h2 {
     font-size: medium;
     text-align: right;
 }
-a.more {
+a.more, a.next {
     font-family: 'Gloria Hallelujah', cursive;
     float: right;
 }
@@ -88,7 +88,6 @@ footer > nav {
     border-top: 5px solid #1C4E63;
     font-weight: lighter;
     font-size: larger;
-    font-family: 'Gloria Hallelujah', cursive;
 }
 footer {
     text-align: center;
@@ -97,15 +96,12 @@ footer {
     /* background-color: #11303D; */
     background-color: #133F52;
     color: #FFFFFF;
+    font-family: 'Gloria Hallelujah', cursive;
 }
 footer > nav > ul > li, footer > nav > ul {
     display: inline-block;
     clear: none;
     margin: 0px 5px;
-}
-footer > nav > ul > li:before,
-footer > nav > ul > li:after {
-    content: ' | ';
 }
 footer ul {
     list-style-type: none;
