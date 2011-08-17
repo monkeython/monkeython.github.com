@@ -1,5 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Cabin+Sketch:700);
 @import url(http://fonts.googleapis.com/css?family=Gloria+Hallelujah);
+@import url(http://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope);
 /*
  * background-color: #1C4E63;
  * background-color: #133F52;
@@ -22,9 +23,11 @@ span.monke {
 span.ython {
     color: #FFED60;
 }
-h1, h2, h3, h4, h5, h6, div.copyright {
+
+h1, h2, h3, h4, h5, h6 {
     font-family: 'Cabin Sketch', arial, serif;
 }
+
 header {
     padding-bottom: 32px;
     padding-top: 32px;
@@ -46,10 +49,13 @@ header h2 {
     margin: 0px auto;
     font-size: medium;
     text-align: right;
+    letter-spacing: 1px;
 }
 a.more, a.next {
-    font-family: 'Gloria Hallelujah', cursive;
+    font-family: 'Annie Use Your Telescope', cursive;
+    letter-spacing: 2px;
     float: right;
+    font-weight: bolder;
 }
 a.forkme {
     background-image: url('/fork-me.png');
@@ -86,17 +92,15 @@ footer > nav {
     padding-top: 10px;
     z-index: 200;
     border-top: 5px solid #1C4E63;
-    font-weight: lighter;
-    font-size: larger;
 }
 footer {
     text-align: center;
-    font-size: smaller;
     margin: auto 0px auto auto;
-    /* background-color: #11303D; */
     background-color: #133F52;
     color: #FFFFFF;
-    font-family: 'Gloria Hallelujah', cursive;
+    font-family: 'Annie Use Your Telescope', cursive;
+    letter-spacing: 2px;
+    font-size: larger;
 }
 footer > nav > ul > li, footer > nav > ul {
     display: inline-block;
@@ -113,7 +117,6 @@ footer dt, footer li {
 footer dl {
     margin: 0px 10px 0px 0px;
     padding: 0px 20px 0px 0px;
-    width: 148px;
     border-right: medium dashed #1C4E63;
     list-style-position: outside;
     display: inline-block;
